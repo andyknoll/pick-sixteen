@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- 
+
+	index.html 
+	Andy Knoll
+	November 2018
+	
+	HTML file for the Pick Sixteen number game
+
+-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<title>Pick Sixteen</title>
+	
+	<!-- app-specific CSS -->
+	<!-- the three child apps must be at same folder level -->
+	<link href="css/pick-16.css" rel="stylesheet">
+
+
+	<!-- custom web fonts -->
+	<link  href="fonts/FingerPaint.css" rel="stylesheet">
+
+	<!-- vendor libraries -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+</head>
+
+<body>
+
+	<div id="container" class="no-select">
+		<header>
+			<h1>PICK SIXTEEN</h1>
+			<p>Pick random numbers and try to beat your score!</p>
+		</header>
+
+		<main>
+			<div id="game">
+				<div id="scoreboard">
+					<div id="start-button-holder">
+						<div id="start-button">START PICKIN'</div>
+					</div>
+					<div id="timer-holder">
+						<div id="timer-label">YOUR TIME: &nbsp;&nbsp; </div>
+						<div id="timer-display"> 0:00</div>
+					</div>
+					<div id="picks-display">
+						<div id="pick-0" class="pick"></div>
+						<div id="pick-1" class="pick"></div>
+						<div id="pick-2" class="pick"></div>
+						<div id="pick-3" class="pick"></div>
+						<div id="pick-4" class="pick"></div>
+						<div id="pick-5" class="pick"></div>
+						<div id="pick-6" class="pick"></div>
+						<div id="pick-7" class="pick"></div>
+						<div id="pick-8" class="pick"></div>
+						<div id="pick-9" class="pick"></div>
+						<div id="pick-10" class="pick"></div>
+						<div id="pick-11" class="pick"></div>
+						<div id="pick-12" class="pick"></div>
+						<div id="pick-13" class="pick"></div>
+						<div id="pick-14" class="pick"></div>
+						<div id="pick-15" class="pick"></div>
+					</div>
+				</div>
+
+				<div id="gameboard">
+					<div id="sqr0" class="square"><div id="p0" class="piece">1</div></div>
+					<div id="sqr1" class="square"><div id="p1" class="piece">2</div></div>
+					<div id="sqr2" class="square"><div id="p2" class="piece">3</div></div>
+					<div id="sqr3" class="square"><div id="p3" class="piece">4</div></div>
+					<div id="sqr4" class="square"><div id="p4" class="piece">5</div></div>
+					<div id="sqr5" class="square"><div id="p5" class="piece">6</div></div>
+					<div id="sqr6" class="square"><div id="p6" class="piece">7</div></div>
+					<div id="sqr7" class="square"><div id="p7" class="piece">8</div></div>
+					<div id="sqr8" class="square"><div id="p8" class="piece">9</div></div>
+					<div id="sqr9" class="square"><div id="p9" class="piece">10</div></div>
+					<div id="sqr10" class="square"><div id="p10" class="piece">11</div></div>
+					<div id="sqr11" class="square"><div id="p11" class="piece">12</div></div>
+					<div id="sqr12" class="square"><div id="p12" class="piece">13</div></div>
+					<div id="sqr13" class="square"><div id="p13" class="piece">14</div></div>
+					<div id="sqr14" class="square"><div id="p14" class="piece">15</div></div>
+					<div id="sqr15" class="square"><div id="p15" class="piece">16</div></div>
+					<div id="overlay"></div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="copyright">&copy; 2018 Andy Knoll - Interactive Magic</div>
+		</footer>
+	</div>
+
+	<!-- app-specific JS code -->
+	<script src="js/pick-16.game.js"></script>
+	<script src="js/pick-16.boards.js"></script>
+	<script src="js/pick-16.launch.js"></script>
+
+</body>
+
+</html>
+

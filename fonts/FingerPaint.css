@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'FingerPaint';
+  font-style: normal;
+  font-weight: 400;
+  src: local('FingerPaint'), url('FingerPaint.woff') format('woff');
+}
